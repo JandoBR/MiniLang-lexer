@@ -93,37 +93,3 @@ INVALID_ID          -> [^alphas] · (alphanums)+
 BADLY_FORMED_NUMBER -> (d)+ (\. (d)+)? [eE][+-]? | (d)+ \. (?!d) | (d)* \. (d)+ \. (d)*
 ```
 
----
-
-### Agrupaciones
-Categorías utilizadas para construir la lógica del lexer:
-
-* **comment:** `SINGLELINE_COMMENT | MULTILINE_COMMENT`
-* **keyword:** `IF | ELSE | WHILE | FOR | PRINT | BREAK | CONTINUE`
-* **tipo:** `INT_TIPO | FLOAT_TIPO | BOOL_TIPO | STRING_TIPO`
-* **literal:** `FLOAT_LITERAL | INT_LITERAL | STRING_LITERAL | BOOL_LITERAL`
-* **increment_decrement:** `INCREMENT | DECREMENT`
-* **relational_operator:** `EQ | NE | LE | GE | LT | GT`
-* **boolean_operator:** `AND | OR | NOT`
-* **arithmetic_operator:** `MAS | MENOS | MULT | DIV | MOD`
-* **delimiters:** `PARENI | PAREND | LLAVEI | LLAVED | PUNTOYCOMA | COMA`
-* **errors:** `OPEN_STRING | INVALID_ID | ILEGAL_SYMBOL`
-
----
-
-### Orden de Precedencia del Lexer
-El lexer evalúa las reglas en este orden de prioridad:
-
-1. `comment`
-2. `keyword`
-3. `tipo`
-4. `BADLY_FORMED_NUMBER`
-5. `literal`
-6. `ID`
-7. `increment_decrement`
-8. `relational_operator`
-9. `boolean_operator`
-10. `arithmetic_operator`
-11. `ASIGN`
-12. `delimiters`
-13. `errors`
