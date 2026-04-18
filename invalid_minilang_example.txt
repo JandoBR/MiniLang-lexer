@@ -1,0 +1,14 @@
+int x = 10;
+float y = 3.14.5;
+string mensaje = "Hola mundo;
+if (x >= 10) {
+    print(mensaje);
+}
+for (int i = 0; i < 5; i++) {
+    print(i);
+}
+x = x + @;
+while (x < 20) {
+    x++;
+}
+$contador = 100;
