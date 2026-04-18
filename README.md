@@ -12,7 +12,7 @@ pip install pyparsing
 ### ¿Cómo ejecutar?
 1. Suba o cree el archivo `program.txt` en el mismo directorio donde se encuentra `main.py`.
 2. Ejecute el código. El analizador leerá y procesará el archivo automáticamente.
-3. Se incluyen ejemplos predefinidos en el repositorio.
+3. Se incluyen ejemplos predefinidos en el repositorio, solo debe renonmbrarlos y ejecutar el codigo.
 
 ---
 
